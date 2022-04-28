@@ -1,0 +1,873 @@
+{
+	"info": {
+		"_postman_id": "eafba619-9c80-4625-aa7a-aab4842df019",
+		"name": "gestion_cinema",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create une categorie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\":\"Electronique\",\n    \"description\":\"produit electronique\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerCategorie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerCategorie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer une ville",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\":\"Lome\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerVille",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerVille"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer une seance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\":\"23736\",\n    \"heure_de_debut\":\"15h30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerSeance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerSeance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer un cinema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"DGDK3747\",\n    \"nom\": \"Cinema Lome4X\",\n    \"position_geographique\": \"LO2238K039\",\n    \"villeId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerCinema",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerCinema"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer une salle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\": \"Salle de repetition\",\n    \"numero\": \"2555\",\n    \"cinemaId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerSalle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerSalle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer une place",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\": \"3776467\",\n    \"position_geographique\":\"29393 23030\",\n    \"salleId\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerPlace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerPlace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer un film",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\": \"Lacasa del papel\",\n    \"date_de_sortie\": \"15/03/2020\",\n    \"salleId\": \"1\",\n    \"categorieId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerFilm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerFilm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer un ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom_client\": \"Bocco Arnold\",\n    \"prix_ticket\": \"1000\",\n    \"code_payement\": \"273Y3U\",\n    \"placeId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerTicket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer une projection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"20/03/2022\",\n    \"prix\": \"30000\",\n    \"salleId\": \"1\",\n    \"filmId\": \"1\",\n    \"seanceId\": \"1\",\n    \"ticketId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/creerProjection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creerProjection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une categorie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerCategorie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerCategorie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une ville",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerVille/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerVille",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une seance",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerSeance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerSeance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer un cinema",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerCinema/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerCinema",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une salle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerSalle/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerSalle",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une place",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerPlace/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerPlace",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer un film",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerFilm/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerFilm",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer un ticket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerTicket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerTicket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer une projection",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/supprimerprojection/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"supprimerprojection",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des villes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesVilles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesVilles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des seances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesSeances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesSeances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des cinemas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesCinemas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesCinemas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des salles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesSalles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesSalles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des places",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesPlaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesPlaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesFilms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesFilms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultation des projections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/lesProjections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lesProjections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une categorie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\":\"Electronique\",\n    \"description\":\"produit electronique\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierCategorie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierCategorie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une ville",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\":\"Lome\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierVille/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierVille",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une seance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\": \"23736\",\n    \"heure_de_debut\": \"15h30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierSeance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierSeance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'un cinema",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"DGDK3747\",\n    \"nom\": \"Cinema Lome4X\",\n    \"position_geographique\": \"LO2238K039\",\n    \"villeId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierCinema/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierCinema",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une salle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\": \"Salle de repetition\",\n    \"numero\": \"2555\",\n    \"cinemaId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierSalle/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierSalle",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une place",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\": \"3776467\",\n    \"position_geographique\": \"29393 23030\",\n    \"salleId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierPlace/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierPlace",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'un film",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\": \"Lacasa del papel\",\n    \"date_de_sortie\": \"15/03/2020\",\n    \"salleId\": \"1\",\n    \"categorieId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierFilm/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierFilm",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'un ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom_client\": \"Bocco Arnold\",\n    \"prix_ticket\": \"1000\",\n    \"code_payement\": \"273Y3U\",\n    \"placeId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierTicket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierTicket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modification d'une projection",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"20/03/2022\",\n    \"prix\": \"30000\",\n    \"salleId\": \"1\",\n    \"filmId\": \"1\",\n    \"seanceId\": \"1\",\n    \"ticketId\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/modifierProjection/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modifierProjection",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
